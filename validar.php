@@ -12,7 +12,7 @@ $clave = $_POST['clave'];
   header('Location:index.php?error');
  } else {
   //  $_SESSION['usuario'] = $_POST['usuario'];
-   $_SESSION['usuario'] = $usuario;
+   $_SESSION['clientes'] = $usuario;
    header('Location:mostrarContenido.php');
  } 
 

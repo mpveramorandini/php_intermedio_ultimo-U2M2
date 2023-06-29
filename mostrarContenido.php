@@ -3,8 +3,8 @@ session_start();
 include("header.php");
 include("conexion.php");
 
-if(isset($_SESSION['usuario'])){
-  $usuario = $_SESSION['usuario'];
+if(isset($_SESSION['clientes'])){
+  $usuario = $_SESSION['clientes'];
   $consulta_db = mysqli_query($conexion_db, "SELECT * FROM usuarios WHERE usuario = '$usuario'");
   $datos_usuario = mysqli_fetch_assoc($consulta_db);
 }
